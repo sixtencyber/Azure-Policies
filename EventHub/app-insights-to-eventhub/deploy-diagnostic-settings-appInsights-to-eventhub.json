@@ -1,7 +1,7 @@
 {
-  "name": "appInsights-diagnostic-settings-eh-policyDef",
+  "name": "deploy-diagnostic-settings-appInsights-to-eventhub",
   "properties": {
-    "displayName": "Apply diagnostic settings for AppInsights - Event Hub",
+    "displayName": "Deploy diagnostic settings for AppInsights to Event Hub",
     "description": "This policy automatically deploys and enable diagnostic settings to Event Hub",
     "metadata": {
       "category": "Monitoring"
@@ -14,7 +14,7 @@
           "displayName": "Setting name",
           "description": "Name of the policy for the diagnostics settings."
         },
-        "defaultValue": "setByPolicyEvtHub"
+        "defaultValue": "setbypolicy-eventhub"
       },
       "resourceLocation": {
         "type": "string",
@@ -68,10 +68,6 @@
                 "equals": "True"
               },
               {
-                "field": "Microsoft.Insights/diagnosticSettings/metrics.enabled",
-                "equals": "True"
-              },
-              {
                 "field": "Microsoft.Insights/diagnosticSettings/eventHubAuthorizationRuleId",
                 "matchInsensitively": "[parameters('eventHubAuthorizationRuleId')]"
               },
@@ -115,62 +111,7 @@
                     "properties": {
                       "eventHubName": "[parameters('eventHubName')]",
                       "eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
-                      "metrics": [
-                        {
-                          "category": "Availability",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        },
-                        {
-                          "category": "Browser",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        },
-                        {
-                          "category": "Server",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        },
-                        {
-                          "category": "Failures",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        },
-                        {
-                          "category": "Usage",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        },
-                        {
-                          "category": "Performance counters",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        }
-                      ],
+                      "metrics": [],
                       "logs": [
                         {
                           "category": "AppAvailabilityResults",
