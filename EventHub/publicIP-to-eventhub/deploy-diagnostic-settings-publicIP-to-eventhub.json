@@ -1,7 +1,7 @@
 {
-  "name": "pip-diagnostic-settings-eh-policyDef",
+  "name": "deploy-diagnostic-settings-publicIP-to-eventhub",
   "properties": {
-    "displayName": "Apply diagnostic settings for Public IPs - Event Hub",
+    "displayName": "Deploy diagnostic settings for Public IPs to Event Hub",
     "description": "This policy automatically deploys and enable diagnostic settings to Event Hub",
     "metadata": {
       "category": "Monitoring"
@@ -14,7 +14,7 @@
           "displayName": "Setting name",
           "description": "Name of the policy for the diagnostics settings."
         },
-        "defaultValue": "setByPolicyEvtHub"
+        "defaultValue": "setbypolicy-eventhub"
       },
       "resourceLocation": {
         "type": "string",
@@ -68,10 +68,6 @@
                 "equals": "True"
               },
               {
-                "field": "Microsoft.Insights/diagnosticSettings/metrics.enabled",
-                "equals": "True"
-              },
-              {
                 "field": "Microsoft.Insights/diagnosticSettings/eventHubAuthorizationRuleId",
                 "matchInsensitively": "[parameters('eventHubAuthorizationRuleId')]"
               },
@@ -115,17 +111,7 @@
                     "properties": {
                       "eventHubName": "[parameters('eventHubName')]",
                       "eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
-                      "metrics": [
-                        {
-                          "category": "AllMetrics",
-                          "timeGrain": null,
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "enabled": false,
-                            "days": 0
-                          }
-                        }
-                      ],
+                      "metrics": [],
                       "logs": [
                         {
                           "category": "DDoSProtectionNotifications",
