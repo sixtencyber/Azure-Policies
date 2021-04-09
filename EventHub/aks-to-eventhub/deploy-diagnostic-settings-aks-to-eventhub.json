@@ -1,7 +1,7 @@
 {
-  "name": "aks-diagnostic-settings-eh-policyDef",
+  "name": "deploy-diagnostic-settings-aks-to-eventhub",
   "properties": {
-    "displayName": "Apply diagnostic settings for Azure Kubernetes Service - Event Hub",
+    "displayName": "Deploy diagnostic settings for Azure Kubernetes Service to Event Hub",
     "description": "This policy automatically deploys and enable diagnostic settings to Event Hub",
     "metadata": {
       "category": "Monitoring"
@@ -14,28 +14,28 @@
           "displayName": "Setting name",
           "description": "Name of the policy for the diagnostics settings."
         },
-        "defaultValue": "setByPolicyEvtHub"
+        "defaultValue": "setbypolicy-eventhub"
       },
       "resourceLocation": {
         "type": "string",
         "metadata": {
           "displayName": "Resource Location",
-          "description": "Resource Location must be the same as the Event Hub",
+          "description": "Resource Location must be in the same Region as the Event Hub (example EastUS2)",
           "strongType": "location"
         }
       },
       "eventHubName": {
         "type": "string",
         "metadata": {
-          "displayName": "Event Hub Name",
-          "description": "Specify the name of the Event Hub"
+          "displayName": "Event Hub Namespace",
+          "description": "Specify the name of the Event Hub Namespace"
         }
       },
       "eventHubAuthorizationRuleId": {
         "type": "string",
         "metadata": {
-          "displayName": "Event Hub Authorization Rule Id",
-          "description": "Specify Event Hub Authorization Rule Id",
+          "displayName": "Select the Event Hub Authorization Rule Id",
+          "description": "Select the Event Hub Authorization Rule Id",
 		  "strongType": "Microsoft.EventHub/Namespaces/AuthorizationRules",
           "assignPermissions": true
         }
@@ -65,10 +65,6 @@
             "allOf": [
               {
                 "field": "Microsoft.Insights/diagnosticSettings/logs.enabled",
-                "equals": "True"
-              },
-              {
-                "field": "Microsoft.Insights/diagnosticSettings/metrics.enabled",
                 "equals": "True"
               },
               {
@@ -115,17 +111,7 @@
                     "properties": {
                       "eventHubName": "[parameters('eventHubName')]",
                       "eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
-                      "metrics": [
-                        {
-                          "category": "AllMetrics",
-                          "enabled": true,
-                          "retentionPolicy": {
-                            "days": 0,
-                            "enabled": false
-                          },
-                          "timeGrain": null
-                        }
-                      ],
+                      "metrics": [],
                       "logs": [
                         {
                           "category": "kube-apiserver",
