@@ -1,7 +1,7 @@
 {
-  "name": "hdInsight-diagnostic-settings-eh-policyDef",
+  "name": "deploy-diagnostic-settings-hdInsight-to-eventhub",
   "properties": {
-    "displayName": "Apply diagnostic settings for HDInsight - Event Hub",
+    "displayName": "Deploy diagnostic settings for HDInsight to Event Hub",
     "description": "This policy automatically deploys and enable diagnostic settings to Event Hub",
     "metadata": {
       "category": "Monitoring"
@@ -14,7 +14,7 @@
           "displayName": "Setting name",
           "description": "Name of the policy for the diagnostics settings."
         },
-        "defaultValue": "setByPolicyEvtHub"
+        "defaultValue": "setbypolicy-eventhub"
       },
       "resourceLocation": {
         "type": "string",
