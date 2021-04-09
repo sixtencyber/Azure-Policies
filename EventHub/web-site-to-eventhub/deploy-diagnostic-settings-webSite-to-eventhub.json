@@ -1,7 +1,7 @@
 {
-    "name": "website-diagnostic-settings-eh-policyDef",
+    "name": "deploy-diagnostic-settings-webSite-to-eventhub",
     "properties": {
-        "displayName": "Apply diagnostic settings for App Services - Event Hub",
+        "displayName": "Deploy diagnostic settings for App Services to Event Hub",
         "description": "This policy automatically deploys and enable diagnostic settings to Event Hub",
         "metadata": {
             "category": "Monitoring"
@@ -14,7 +14,7 @@
                     "displayName": "Setting name",
                     "description": "Name of the policy for the diagnostics settings."
                 },
-                "defaultValue": "setByPolicyEvtHub"
+                "defaultValue": "setbypolicy-eventhub"
             },
             "resourceLocation": {
                 "type": "string",
@@ -72,10 +72,6 @@
                                 "equals": "True"
                             },
                             {
-                                "field": "Microsoft.Insights/diagnosticSettings/metrics.enabled",
-                                "equals": "True"
-                            },
-                            {
                                 "field": "Microsoft.Insights/diagnosticSettings/eventHubAuthorizationRuleId",
                                 "matchInsensitively": "[parameters('eventHubAuthorizationRuleId')]"
                             },
@@ -119,17 +115,7 @@
                                         "properties": {
                                             "eventHubName": "[parameters('eventHubName')]",
                                             "eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
-                                            "metrics": [
-                                                {
-                                                    "category": "AllMetrics",
-                                                    "enabled": true,
-                                                    "retentionPolicy": {
-                                                        "days": 0,
-                                                        "enabled": false
-                                                    },
-                                                    "timeGrain": null
-                                                }
-                                            ],
+                                            "metrics": [],
                                             "logs": [
                                                 {
                                                     "category": "AppServiceAntivirusScanAuditLogs",
