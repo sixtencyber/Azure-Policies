@@ -1,7 +1,7 @@
 {
-  "name": "cdnProfiles-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-cdn-profile-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for CDN Profiles - Log Analytics",
+    "displayName": "Deploy diagnostic settings for CDN Profiles to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
