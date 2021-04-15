@@ -1,7 +1,7 @@
 {
-  "name": "bastion-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-bastion-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Azure Bastion Hosts - Log Analytics",
+    "displayName": "Deploy diagnostic settings for Azure Bastion Hosts to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
