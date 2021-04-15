@@ -1,7 +1,7 @@
 {
-  "name": "cognitive-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-cognitive-services-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Cognitive Services - Log Analytics",
+    "displayName": "Deploy diagnostic settings for Cognitive Services to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
