@@ -1,7 +1,7 @@
 {
-  "name": "ase-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-ASE-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for App Service Environments - Log Analytics",
+    "displayName": "Deploy diagnostic settings for App Service Environments to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
