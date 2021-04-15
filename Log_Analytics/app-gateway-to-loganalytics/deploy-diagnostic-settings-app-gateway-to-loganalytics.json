@@ -1,7 +1,7 @@
 {
-  "name": "appGw-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-app-gateway-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Application Gateways - Log Analytics",
+    "displayName": "Deploy diagnostic settings for Application Gateways to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
