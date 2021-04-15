@@ -1,7 +1,7 @@
 {
-  "name": "aa-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-automation-account-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Azure Automation Accounts - Log Analytics",
+    "displayName": "Deploy diagnostic settings for Azure Automation Accounts to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
