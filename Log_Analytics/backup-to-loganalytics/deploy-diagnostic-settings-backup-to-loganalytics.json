@@ -1,7 +1,7 @@
 {
-  "name": "backup-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-backup-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Azure Backup - Log Analytics",
+    "displayName": "Deploy diagnostic settings for Azure Backup to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
