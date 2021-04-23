@@ -1,7 +1,7 @@
 {
-  "name": "sql-mi-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-sqlManaged-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for SQL Managed Instances - Log Analytics",
+    "displayName": "Apply diagnostic settings for SQL Managed Instances to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
