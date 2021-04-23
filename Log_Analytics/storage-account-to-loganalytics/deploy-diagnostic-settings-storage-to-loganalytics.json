@@ -1,7 +1,7 @@
 {
-  "name": "sa-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-storage-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Storage Account - Log Analytics",
+    "displayName": "Apply diagnostic settings for Storage Account to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
