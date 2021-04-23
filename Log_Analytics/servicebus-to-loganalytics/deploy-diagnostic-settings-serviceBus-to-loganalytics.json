@@ -1,7 +1,7 @@
 {
-  "name": "serviceBus-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-serviceBus-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Service Bus namespaces - Log Analytics",
+    "displayName": "Apply diagnostic settings for Service Bus Namespaces to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
