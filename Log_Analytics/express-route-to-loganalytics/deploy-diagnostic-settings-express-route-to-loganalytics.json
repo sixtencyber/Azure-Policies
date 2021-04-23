@@ -1,7 +1,7 @@
 {
-  "name": "expressRoutes-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-express-route-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Express Routes Circuits - Log Analytics",
+    "displayName": "Apply diagnostic settings for Express Routes Circuits to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
