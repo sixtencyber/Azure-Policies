@@ -1,7 +1,7 @@
 {
-  "name": "logicApps-integrationAccounts-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-logicapps-integration-account-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Logic Apps Integration Accounts - Log Analytics",
+    "displayName": "Apply diagnostic settings for Logic Apps Integration Accounts to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
