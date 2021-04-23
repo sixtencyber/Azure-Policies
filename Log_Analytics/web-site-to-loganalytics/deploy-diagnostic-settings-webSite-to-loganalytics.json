@@ -1,7 +1,7 @@
 {
-  "name": "website-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-webSite-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for App Services - Log Analytics",
+    "displayName": "Apply diagnostic settings for App Services to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
