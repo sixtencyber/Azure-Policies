@@ -1,7 +1,7 @@
 {
-  "name": "iotHub-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-iot-hub-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for IoT Hubs - Log Analytics",
+    "displayName": "Apply diagnostic settings for IoT Hubs to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
