@@ -1,7 +1,7 @@
 {
-  "name": "vnetGW-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-vnetGW-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Virtual Network Gateways - Log Analytics",
+    "displayName": "Apply diagnostic settings for Virtual Network Gateways to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
