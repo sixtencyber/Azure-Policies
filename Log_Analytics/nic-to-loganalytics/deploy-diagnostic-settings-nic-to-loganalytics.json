@@ -1,7 +1,7 @@
 {
-  "name": "nic-diagnostic-settings-policyDef",
+  "name": "deploy-diagnostic-settings-nic-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Network Interfaces - Log Analytics",
+    "displayName": "Apply diagnostic settings for Network Interfaces to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
