@@ -1,7 +1,7 @@
 {
   "name": "deploy-diagnostic-settings-logicapps-ise-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Logic Apps Integration Service Environment to Log Analytics",
+    "displayName": "Deploy diagnostic settings for Logic Apps Integration Service Environment to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
