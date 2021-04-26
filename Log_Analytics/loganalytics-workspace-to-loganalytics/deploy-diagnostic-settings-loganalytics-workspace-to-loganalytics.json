@@ -1,7 +1,7 @@
 {
   "name": "deploy-diagnostic-settings-loganalytics-workspace-to-loganalytics",
   "properties": {
-    "displayName": "Apply diagnostic settings for Log Analytics Workspaces to Log Analytics",
+    "displayName": "Deploy diagnostic settings for Log Analytics Workspaces to Log Analytics",
     "description": "This policy automatically deploys and enable diagnostic settings to Log Analytics",
     "metadata": {
       "category": "Monitoring"
