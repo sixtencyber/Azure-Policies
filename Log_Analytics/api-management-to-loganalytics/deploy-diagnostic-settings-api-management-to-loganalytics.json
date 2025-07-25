@@ -95,7 +95,7 @@
                 "resources": [
                   {
                     "type": "Microsoft.ApiManagement/service/providers/diagnosticSettings",
-                    "apiVersion": "2017-05-01-preview",
+                    "apiVersion": "2024-06-01-preview",
                     "name": "[concat(parameters('resourceName'), '/', 'Microsoft.Insights/', parameters('diagnosticsSettingNameToUse'))]",
                     "location": "[parameters('location')]",
                     "dependsOn": [],
